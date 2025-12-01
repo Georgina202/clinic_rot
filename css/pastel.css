@@ -1,0 +1,160 @@
+:root {
+  --bg: #f3f4ed;
+  --card: #ffffff;
+  --accent: #e9a66f;
+  --accent-hover: #d88f56;
+  --text: #3b3b3b;
+  --muted: #7c7c7c;
+  --radius: 14px;
+  --shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  --border: #e2e2e2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  padding: 2rem;
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+h1, h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: .25rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: .65rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fafafa;
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-size: .9rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+button,
+.btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: .7rem 1.4rem;
+  border-radius: 10px;
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(233, 166, 111, 0.30);
+  transition: 0.15s ease;
+}
+
+button:hover,
+.btn:hover {
+  background: var(--accent-hover);
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: .9rem;
+}
+
+th, td {
+  padding: .6rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  color: var(--muted);
+  font-size: .8rem;
+}
+
+tr:hover {
+  background: #fff7ef;
+}
+
+.badge {
+  padding: .25rem .7rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.badge-finalizada {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-enproceso {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-cancelada {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.link {
+  color: var(--accent);
+  font-size: .9rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.small {
+  font-size: .8rem;
+  color: var(--muted);
+}

@@ -1,0 +1,37 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# XAMPP / Windows basura
+*.log
+*.cache
+
+# Archivos de configuración sensibles
+*.env
+.env.local
+*.env.*.local
+
+# Carpetas de dependencias 
+vendor/
+node_modules/
+
+# IDE / Editor basura
+.vscode/
+.idea/
+
+# Backups y archivos temporales
+*.bak
+*.tmp
+
+# Archivos generados
+*.zip
+*.rar
+*.tar
+*.gz
+
+# No subir capturas ni archivos gigantes por accidente
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.avi
